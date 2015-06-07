@@ -66,7 +66,7 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 etc/firmware/wlan/prima/WCNSS_cfg.dat
-etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 etc/permissions/com.google.widevine.software.drm.xml
 etc/permissions/com.qualcomm.location.xml
@@ -95,8 +95,6 @@ lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libqomx_core.so
-lib/libril.so
-lib/librilutils.so
 lib/libwcnss_qmi.so
 priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/slim_ap_daemon
