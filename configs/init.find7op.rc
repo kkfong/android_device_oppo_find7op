@@ -338,6 +338,12 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    #Create folder for mm-qcamera-daemon
+    mkdir /data/camera 0770 media camera
+
+    # camera sockets
+    mkdir /data/misc/camera 0770 camera camera
+
 on charger
     # Enable Power modes and set the CPU Freq Sampling rates
     write /sys/module/lpm_levels/enable_low_power/l2 4
