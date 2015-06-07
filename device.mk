@@ -10,6 +10,10 @@ LOCAL_PATH := device/oppo/find7op
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Init
+PRODUCT_PACKAGES += \
+    libinit_find7
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.find7op.rc:root/init.qcom.rc \
