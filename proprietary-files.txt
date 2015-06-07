@@ -79,17 +79,11 @@ framework/qcrilhook.jar
 lib/egl/egl.cfg
 lib/egl/libGLES_android.so
 lib/hw/camera.msm8974.so
-lib/hw/gps.default.so
-lib/hw/nfc.default.so
 lib/hw/nfc_nci.msm8974.so
 lib/libcnefeatureconfig.so
 lib/libdrmdecrypt.so
-lib/libgps.utils.so
 lib/libloc_api_v02.so
-lib/libloc_core.so
 lib/libloc_ds_api.so
-lib/libloc_eng.so
-lib/libloc_xtra.so
 lib/libmdmdetect.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
@@ -210,7 +204,6 @@ vendor/lib/liblistenhardware.so
 vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel.so
 vendor/lib/libllvm-qcom.so
-vendor/lib/libloc_ext.so
 vendor/lib/liblocationservice.so
 vendor/lib/liblowi_client.so
 vendor/lib/libmdmdetect.so
