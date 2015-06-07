@@ -216,12 +216,12 @@ on boot
     chown system system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
 
     # kernel thermal config
-    write /sys/module/msm_thermal/core_control/enabled 1
-    write /sys/module/msm_thermal/core_control/limit_temp 80
-    write /sys/module/msm_thermal/freq_control/limit_temp 70
-    write /sys/module/msm_thermal/freq_control/poll_ms 500
-    write /sys/module/msm_thermal/freq_control/freq_step 2
-    write /sys/module/msm_thermal/parameters/enabled 1
+    #write /sys/module/msm_thermal/core_control/enabled 1
+    #write /sys/module/msm_thermal/core_control/limit_temp 80
+    #write /sys/module/msm_thermal/freq_control/limit_temp 70
+    #write /sys/module/msm_thermal/freq_control/poll_ms 500
+    #write /sys/module/msm_thermal/freq_control/freq_step 2
+    #write /sys/module/msm_thermal/parameters/enabled 1
 
     # Switch to ROW and balanced mode after boot for better UX
     write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
@@ -495,13 +495,13 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-#service thermal-engine /system/bin/thermal-engine
-#   class main
-#   user root
-#   group root
-#   socket thermal-send-client stream 0666 system system
-#   socket thermal-recv-client stream 0660 system system
-#   socket thermal-recv-passive-client stream 0666 system system
+service thermal-engine /system/bin/thermal-engine
+   class main
+   user root
+   group root
+   socket thermal-send-client stream 0666 system system
+   socket thermal-recv-client stream 0660 system system
+   socket thermal-recv-passive-client stream 0666 system system
 
 service mpdecision /system/bin/mpdecision --avg_comp
    class core
