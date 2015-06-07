@@ -56,5 +56,3 @@ TARGET_KERNEL_CONFIG := bacon_defconfig
 
 # Inherit from proprietary blobs
 $(call inherit-product-if-exists, vendor/oppo/find7op/find7op-vendor.mk)
-$(call inherit-product-if-exists, vendor/oppo/find7a/find7a-vendor.mk)
-
