@@ -133,6 +133,7 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libOpenCL.so
+vendor/lib/libOpenVG.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/libSHIMDivxDrm.so
