@@ -69,6 +69,11 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
 
 on boot
+    # bring CPUs online
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu3/online 1
+
     #Oppo nv dump stuff - probably needed for BT MAC address.
     #hci_qcomm_init does want to look here
     mkdir /data/opponvitems  0771 radio radio
