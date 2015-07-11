@@ -5,4 +5,6 @@ echo Resetting each patched repo...
 
 cd packages/apps/Settings
 git reset --hard && git clean -f -d
-cd ../../..
+cd ../../../vendor/omni
+git reset --hard && git clean -f -d
+cd ../..
