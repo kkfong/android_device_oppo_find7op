@@ -1,0 +1,25 @@
+diff --git a/src/com/android/settings/DeviceInfoSettings.java b/src/com/android/settings/DeviceInfoSettings.java
+index 871571e..2d28977 100644
+--- a/src/com/android/settings/DeviceInfoSettings.java
++++ b/src/com/android/settings/DeviceInfoSettings.java
+@@ -152,7 +152,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
+                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
+ 
+         // These are contained by the root preference screen
+-        parentPreference = getPreferenceScreen();
++        /*parentPreference = getPreferenceScreen();
+         if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+             Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference,
+                     KEY_SYSTEM_UPDATE_SETTINGS,
+@@ -160,7 +160,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
+         } else {
+             // Remove for secondary users
+             removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
+-        }
++        }*/
++
++        // Remove system update menu
++        removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
+ 
+         // Read platform settings for additional system update setting
+         removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
