@@ -315,9 +315,6 @@ on post-fs-data
     chown system system /sys/devices/platform/msm_sdcc.3/polling
     chown system system /sys/devices/platform/msm_sdcc.4/polling
 
-    # Force regeneration of sensor registry
-    rm /data/misc/sensors/sns.reg
-
     mkdir /data/system 0775 system system
 
     #Create directory used by sensor subsystem(dsps)
